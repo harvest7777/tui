@@ -98,7 +98,6 @@ func (m model) View() string {
     return s
 }
 func main() {
-	fmt.Println("hello")
 	p := tea.NewProgram(initialModel())
     if _, err := p.Run(); err != nil {
         fmt.Printf("Alas, there's been an error: %v", err)
